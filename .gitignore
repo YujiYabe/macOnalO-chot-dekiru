@@ -1,0 +1,45 @@
+
+# Created by https://www.gitignore.io/api/go
+# Edit at https://www.gitignore.io/?templates=go
+
+### Go ###
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+### Go Patch ###
+*/vendor/*
+*/Godeps/*
+backend/vendor
+backend/script/order/vendor
+
+# End of https://www.gitignore.io/api/go
+
+
+/db/engine/mysql/data/*
+gin-bin
+.envrc
+/direnv/*
+direnv
+db/tool/phpmyadmin/sessions/*
+
+*.log
+
+*/tmp/main
+backend/yummy/*.json
+backend/script/order/register/*.json
+backend/script/order/register/reserved/*.json
+
+backend/script/order/delivery/vendor/*
